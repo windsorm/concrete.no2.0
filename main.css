@@ -1,0 +1,227 @@
+/*Main fonts - Montserrat, Antonio*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root { 
+/*Main color palette*/
+    --main-black: #000000;
+    --main-pink: #f48e89;
+    --main-green: #719067;
+    --main-gray: #DEDEDE;
+  }
+
+  * /*Formatting reset*/
+ {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================================================== */
+/* MENU */
+/* ========================================================================== */
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav-logo a {
+    float: left;
+    margin: 0 50px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.menu {
+    margin: 20px 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: var(--main-black);
+    margin: 0 30px;
+    line-height: 70px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+/* ========================================================================== */
+/* CONTENT STYLES */
+/* ========================================================================== */
+
+h1 {
+    font-family: "Antonio", sans-serif;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: "Antonio", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 140%;
+    padding-right: 20px;
+}
+
+
+.intro-container {
+   display: flex;
+   flex-direction: row;
+   margin: 40px 50px;
+}
+
+.intro-text-container {
+    width: 45%;
+}
+
+.intro-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    
+}
+
+.intro-image img {
+    height: 65vh;
+}
+
+.collections-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 33%;
+}
+
+.col-2 {
+    flex: 33%;
+}
+
+.col-3 {
+    flex: 33%;
+}
+
+
+
+/* ========================================================================== */
+/* BUTTONS */
+/* ========================================================================== */
+.main-btn {
+    color: white;
+    background-color: var(--main-green);
+    border: none;
+    padding: 25px 50px;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 60px 0;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* ========================================================================== */
+/* MEDIA QUERIES */
+/* ========================================================================== */
+@media only screen and (max-width: 930px) {
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 1em;
+}
+
+.main-btn {
+    padding: 20px 40px;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 650px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    .intro-container {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .intro-text-container {
+        width: 100%;
+    }
+    
+    .intro-image {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
