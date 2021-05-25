@@ -121,10 +121,12 @@ p {
     height: 65vh;
 }
 
+/*
 .collections-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .col-1 {
@@ -138,6 +140,13 @@ p {
 .col-3 {
     flex: 33%;
 }
+*/
+.collections-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 
 footer {
     background-color: var(--main-pink);
@@ -208,8 +217,7 @@ p {
     }
 
     .intro-container {
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding-top: 70px
     }
 
