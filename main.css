@@ -149,6 +149,12 @@ p {
     flex: 1;
 }
 
+.ab-flex {
+    display: flex;
+    margin: 40px 50px;
+    justify-content: space-between;
+}
+
 .process-container {
     display: flex;
     justify-content: space-around;
@@ -163,8 +169,9 @@ p {
 .collections-container,
 .how-to-use-cotainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 40px 50px;
 }
 
 
@@ -298,7 +305,7 @@ footer {
 
 
     h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 }
 
