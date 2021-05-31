@@ -10,7 +10,6 @@
 }
 
 *
-
 /*Formatting reset*/
     {
     margin: 0;
@@ -27,6 +26,7 @@ body {
 
 /* ========================================================================== */
 /* MENU */
+/* Burger menu for small screens - done with the checkbox trick, no external javascript used */ 
 /* ========================================================================== */
 
 html {
@@ -102,7 +102,6 @@ h3 {
 p {
     font-size: 1.2em;
     line-height: 140%;
-    padding-right: 20px;
     padding-bottom: 10px;
 }
 
@@ -117,9 +116,12 @@ p {
     width: 45%;
 }
 
+.intro-text-container p {
+    padding-right: 20px;
+}
+
 .intro-image {
     padding-left: 30px;
-    display: block;
 
 }
 
@@ -131,11 +133,11 @@ p {
 
 
 .about-brand-txt {
-    width: 50%;
+    flex: 2;
 }
 
 .about-brand-img {
-    width: 50%;
+    flex: 1;
 }
 
 .process-container {
@@ -263,5 +265,9 @@ footer {
 
     .contact-details {
         flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
