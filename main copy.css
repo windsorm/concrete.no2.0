@@ -54,15 +54,10 @@ nav {
     clear: right;
     text-decoration: none;
     color: var(--main-black);
-    margin: 0 25px;
+    margin: 0 30px;
     line-height: 70px;
     font-size: larger;
     font-weight: 700;
-}
-
-#logo-nav {
-    height: 10vh;
-    width: auto;
 }
 
 .menu a:hover {
@@ -105,28 +100,24 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 140%;
     padding-bottom: 10px;
 }
 
-.p-intro {
-    font-size: 2em;
-}
-
-.basic-fw-p {
-    margin: 40px 50px;
-}
 
 .intro-container {
     display: flex;
     flex-direction: row;
     margin: 40px 50px;
-    justify-content: space-between;
 }
 
 .intro-text-container {
     width: 45%;
+}
+
+.intro-text-container p {
+    padding-right: 20px;
 }
 
 .intro-image {
@@ -135,7 +126,7 @@ p {
 }
 
 .intro-image img {
-    height: 70vh;
+    height: 65vh;
     max-width: 100%;
     object-fit: cover;
 }
@@ -193,17 +184,6 @@ footer {
 /* ========================================================================== */
 /* BUTTONS */
 /* ========================================================================== */
-.shop-now {
-    color: var(--main-green);
-    background-color: var(--white);
-    border: 3px solid;
-    padding: 25px 50px;
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 60px 0;
-    cursor: pointer;
-}
-
 .main-btn {
     color: white;
     background-color: var(--main-green);
@@ -213,11 +193,6 @@ footer {
     font-weight: 700;
     margin: 60px 0;
     cursor: pointer;
-}
-
-.shop-now:hover {
-    color: white;
-    background-color: var(--main-green);
 }
 
 .main-btn:hover {
@@ -238,7 +213,7 @@ footer {
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .main-btn {
@@ -294,16 +269,5 @@ footer {
 
     img {
         max-width: 100%;
-    }
-
-
-    h1 {
-        font-size: 80px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .shop-now {
-        width: 100%;
     }
 }
