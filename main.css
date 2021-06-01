@@ -115,13 +115,13 @@ p {
 }
 
 .basic-fw-p {
-    margin: 40px 50px;
+    margin: 40px 70px;
 }
 
 .intro-container {
     display: flex;
     flex-direction: row;
-    margin: 40px 50px;
+    margin: 40px 70px;
     justify-content: space-between;
 }
 
@@ -151,7 +151,7 @@ p {
 
 .ab-flex {
     display: flex;
-    margin: 40px 50px;
+    margin: 40px 70px;
     justify-content: space-between;
 }
 
@@ -171,7 +171,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 40px 50px;
+    margin: 40px 70px;
 }
 
 
