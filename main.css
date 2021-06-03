@@ -57,11 +57,11 @@ nav {
     font-size: larger;
 }
 
-.menu {
+.menu, .menu-collection {
     margin: 20px 30px 0 0;
 }
 
-.menu a {
+.menu a, .menu-collection a {
     clear: right;
     text-decoration: none;
     color: var(--main-black);
@@ -71,12 +71,16 @@ nav {
     font-weight: 700;
 }
 
+.menu-collection a {
+    text-transform: uppercase;
+}
+
 #logo-nav {
     height: 10vh;
     width: auto;
 }
 
-.menu a:hover {
+.menu, .menu-collection a:hover {
     opacity: 0.8;
 }
 
@@ -114,6 +118,7 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 80px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -122,6 +127,7 @@ h2 {
     font-size: 2.6em;
     margin-top: 60px;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -240,6 +246,10 @@ p {
     margin: 10px;
 }
 
+.collections-container a:hover {
+    opacity: 0.8;
+}
+
 .centered-text {
     text-align: center;
 }
@@ -271,6 +281,24 @@ footer {
     width: 50%;
 }
 
+/* ========================================================================== */
+/* COLLECTION PAGES */
+/* ========================================================================== */
+.collection-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: space-around;
+}
+
+
+.column {
+   flex: 33%;
+}
+
+.column img {
+    margin: 11px;
+}
 
 /* ========================================================================== */
 /* BUTTONS */
@@ -396,6 +424,16 @@ footer {
 
     .def-layout-margin, .intro-layout-margin  {
         margin: 40px 30px;
+    }
+
+    .collection-columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .column {
+        width: 80%;
     }
 }
 
