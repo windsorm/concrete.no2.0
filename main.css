@@ -1,5 +1,9 @@
-/*Main fonts - Montserrat, Antonio*/
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* FONTS */
+/* Main Headlines - Bebas Neue Pro*/
+@import url("https://use.typekit.net/nbl3hht.css");
+/* Main text, secondary headlines - Montserrat*/
+@import url('https://fonts.googleapis.com/family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
 /*Main color palette*/
@@ -18,25 +22,32 @@
     text-decoration: none;
 }
 
+/*Default display fix*/
 html,
 body {
     width: 100%;
     height: 100%;
 }
 
-/* ========================================================================== */
-/* MENU */
-/* Burger menu for small screens - done with the checkbox trick, no external javascript used */ 
-/* ========================================================================== */
-
 html {
+    /*Default body typeface - Montserrat*/
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
 
+/* ========================================================================== */
+/* MENU */
+/* Burger menu for small screens - done with the checkbox trick, no external javascript used */ 
+/* ========================================================================== */
 nav {
     text-align: right;
     line-height: 70px;
+    /*
+    For fixed menu while scrolling
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    */
 }
 
 .nav-logo a {
@@ -46,11 +57,11 @@ nav {
     font-size: larger;
 }
 
-.menu {
+.menu, .menu-collection {
     margin: 20px 30px 0 0;
 }
 
-.menu a {
+.menu a, .menu-collection a {
     clear: right;
     text-decoration: none;
     color: var(--main-black);
@@ -60,17 +71,21 @@ nav {
     font-weight: 700;
 }
 
+.menu-collection a {
+    text-transform: uppercase;
+}
+
 #logo-nav {
-    height: 10vh;
+    height: 8vh;
     width: auto;
 }
 
-.menu a:hover {
+.menu, .menu-collection a:hover {
     opacity: 0.8;
 }
 
 label {
-    margin: 0 40px 0 0;
+    margin: 0 50px 0 0;
     font-size: 26px;
     line-height: 70px;
     display: none;
@@ -86,43 +101,75 @@ label {
 /* CONTENT STYLES */
 /* ========================================================================== */
 
+/* Intro section margin */
+.intro-layout-margin {
+    margin: 40px 100px;
+}
+
+/* Default layout margin */
+.def-layout-margin {
+    margin: 40px 150px;
+}
+
+
+/* Main headlines styles*/
 h1 {
-    font-family: "Antonio", sans-serif;
+    font-family: "bebas-neue-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 80px;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-family: "Antonio", sans-serif;
+    font-family: "bebas-neue-pro", sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.6em;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 h3 {
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0 10px 0;
+    font-size: 1.5em;
 }
 
+.q-headline {
+    color: var(--main-green);
+    font-weight: 500;
+}
+
+.footer-h2 {
+    font-family: "bebas-neue-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4em;
+    text-align: left;
+}
+
+/* Main body text styles */
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 140%;
     padding-bottom: 10px;
 }
 
+/* Intro text */
 .p-intro {
-    font-size: 2em;
+    font-size: 1.7em;
+    padding-right: 1.3rem;
+    font-weight: 500;
 }
 
-.basic-fw-p {
-    margin: 40px 70px;
-}
 
+/*Introduction section*/
 .intro-container {
     display: flex;
     flex-direction: row;
-    margin: 40px 70px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .intro-text-container {
@@ -141,6 +188,24 @@ p {
 }
 
 
+/* Icon section */
+.icon-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    margin: 20px;
+}
+
+.icon-container img {
+    margin:auto;
+    display:block;
+    padding: 20px;
+}
+
+/* About brand section */
 .about-brand-txt {
     flex: 2;
 }
@@ -151,13 +216,22 @@ p {
 
 .ab-flex {
     display: flex;
-    margin: 40px 70px;
+    
     justify-content: space-between;
 }
 
+.some-icons {
+    height: 5vh;
+}
+
+.some-spacing {
+    margin: 0 0 0 25px;
+}
+
+/* Process section */
 .process-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -166,17 +240,57 @@ p {
     max-width: 100%;
 }
 
+/* Collection section */
 .collections-container,
 .how-to-use-cotainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 40px 70px;
+    margin-top: 30px;
+}
+
+.collections-container img {
+    height: 60vh;
+    width: auto;
+    margin: 10px;
+}
+
+.collections-container a:hover {
+    opacity: 0.8;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-left: 0.7rem;
+}
+
+/* FAQ section */
+.faq-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
+.faq h3, p{
+    text-align: left;
+}
+
+.q-container {
+    flex: 40%;
+    margin: 40px;
+}
+
+/* Footer section */
 footer {
-    background-color: var(--main-gray);
+    background-color: #F3F3F2;
+    background-image: url(assets/footer-bg-fixed.png);
+    background-repeat: no-repeat;
+    background-position: right;
     color: var(--main-black);
     padding: 10px 0;
     margin-top: 30px;
@@ -193,9 +307,28 @@ footer {
 }
 
 .contact-flex {
-    width: 50%;
+    width: 40%;
+    margin-right: 30px;
 }
 
+/* ========================================================================== */
+/* COLLECTION PAGES */
+/* ========================================================================== */
+.collection-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-self: space-around;
+}
+
+
+.column {
+   flex: 33%;
+}
+
+.column img {
+    margin: 11px;
+}
 
 /* ========================================================================== */
 /* BUTTONS */
@@ -235,13 +368,20 @@ footer {
 /* ========================================================================== */
 /* MEDIA QUERIES */
 /* ========================================================================== */
+@media only screen and (max-width: 1100px) {
+    .contact-flex {
+        width: 90%;
+        padding-top: 20px
+    }
+}
+
 @media only screen and (max-width: 930px) {
     h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     p {
@@ -252,9 +392,28 @@ footer {
         padding: 20px 40px;
         font-size: 1.1em;
     }
-}
 
-@media only screen and (max-width: 650px) {
+    .def-layout-margin, .intro-layout-margin  {
+    margin: 40px 50px;
+    }
+
+    .ab-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .q-container {
+        flex: 100%;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+}
+    
+
+@media only screen and (max-width: 700px) {
     label {
         display: block;
         cursor: pointer;
@@ -295,9 +454,6 @@ footer {
         max-width: 100%;
     }
 
-    .contact-details {
-        flex-direction: column;
-    }
 
     img {
         max-width: 100%;
@@ -307,10 +463,50 @@ footer {
     h1 {
         font-size: 70px;
     }
-}
+
+    .def-layout-margin, .intro-layout-margin  {
+        margin: 40px 30px;
+    }
+
+    .collection-columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .column {
+        width: 80%;
+    }
+
+    .some-icons {
+        height: 5vh;
+        margin-top: 20px;
+    }
+
+    .contact-flex {
+        width: 80%;
+        margin-right: 30px;
+    }
+    footer {
+        background-image: none;
+    }
+}  
 
 @media only screen and (max-width: 550px) {
     .shop-now {
-        width: 100%;
+        width: 70%;
+    }
+
+    .shop-now {
+        padding: 20px 10px;
+        font-size: 1em;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .collections-container img {
+        margin: 0;
     }
 }
