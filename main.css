@@ -187,6 +187,22 @@ p {
     object-fit: cover;
 }
 
+.icon-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    margin: 20px;
+}
+
+.icon-container img {
+    margin:auto;
+    display:block;
+    padding: 20px;
+}
+
 
 /* Icon section */
 .icon-section {
@@ -228,7 +244,9 @@ p {
     margin: 0 0 0 25px;
 }
 
+
 /* Process section */
+
 .process-container {
     display: flex;
     justify-content: space-evenly;
@@ -247,6 +265,7 @@ p {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
+
 }
 
 .collections-container img {
@@ -481,6 +500,7 @@ footer {
     .some-icons {
         height: 5vh;
         margin-top: 20px;
+
     }
 
     .contact-flex {
