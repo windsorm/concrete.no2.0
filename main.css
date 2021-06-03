@@ -176,6 +176,22 @@ p {
     object-fit: cover;
 }
 
+.icon-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    margin: 20px;
+}
+
+.icon-container img {
+    margin:auto;
+    display:block;
+    padding: 20px;
+}
+
 
 .about-brand-txt {
     flex: 2;
@@ -221,6 +237,7 @@ p {
 .collections-container img {
     height: 60vh;
     width: auto;
+    margin: 10px;
 }
 
 .centered-text {
