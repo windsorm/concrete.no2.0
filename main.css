@@ -41,13 +41,7 @@ html {
 /* ========================================================================== */
 nav {
     text-align: right;
-    line-height: 70px;
-    /*
-    For fixed menu while scrolling
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    */
+    
 }
 
 .nav-logo a {
