@@ -37,14 +37,17 @@ html {
 }
 
 /* ========================================================================== */
-/* MENU */
+/* RESPONSIVE MENU */
 /* Burger menu for small screens - done with the checkbox trick, no external javascript used */
+/* Done with help of tutorial by Caler Edwards, “Responsive Menu With Media Queries (Checkbox Trick) - Using Only CSS3” (Youtube, 2017)*/
+/* https://www.youtube.com/watch?v=xMTs8tAapnQ&t=416s, (05.26.2021) */ 
 /* ========================================================================== */
+
 nav {
     text-align: right;
     line-height: 70px;
     /*
-    For fixed menu while scrolling
+    For fixed menu while scrolling - add later
     position: fixed; 
     top: 0; 
     width: 100%; 
