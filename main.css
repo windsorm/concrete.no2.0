@@ -6,7 +6,7 @@
 
 
 :root {
-/*Main color palette*/
+    /*Main color palette*/
     --main-black: #000000;
     --main-pink: #f48e89;
     --main-green: #719067;
@@ -14,6 +14,7 @@
 }
 
 *
+
 /*Formatting reset*/
     {
     margin: 0;
@@ -37,7 +38,7 @@ html {
 
 /* ========================================================================== */
 /* MENU */
-/* Burger menu for small screens - done with the checkbox trick, no external javascript used */ 
+/* Burger menu for small screens - done with the checkbox trick, no external javascript used */
 /* ========================================================================== */
 nav {
     text-align: right;
@@ -57,11 +58,13 @@ nav {
     font-size: larger;
 }
 
-.menu, .menu-collection {
+.menu,
+.menu-collection {
     margin: 20px 30px 0 0;
 }
 
-.menu a, .menu-collection a {
+.menu a,
+.menu-collection a {
     clear: right;
     text-decoration: none;
     color: var(--main-black);
@@ -80,7 +83,8 @@ nav {
     width: auto;
 }
 
-.menu, .menu-collection a:hover {
+.menu,
+.menu-collection a:hover {
     opacity: 0.8;
 }
 
@@ -198,8 +202,8 @@ p {
 }
 
 .icon-container img {
-    margin:auto;
-    display:block;
+    margin: auto;
+    display: block;
     padding: 20px;
 }
 
@@ -216,8 +220,8 @@ p {
 }
 
 .icon-container img {
-    margin:auto;
-    display:block;
+    margin: auto;
+    display: block;
     padding: 20px;
 }
 
@@ -232,7 +236,7 @@ p {
 
 .ab-flex {
     display: flex;
-    
+
     justify-content: space-between;
 }
 
@@ -295,7 +299,8 @@ p {
 }
 
 
-.faq h3, p{
+.faq h3,
+p {
     text-align: left;
 }
 
@@ -342,7 +347,7 @@ footer {
 
 
 .column {
-   flex: 33%;
+    flex: 33%;
 }
 
 .column img {
@@ -412,8 +417,9 @@ footer {
         font-size: 1.1em;
     }
 
-    .def-layout-margin, .intro-layout-margin  {
-    margin: 40px 50px;
+    .def-layout-margin,
+    .intro-layout-margin {
+        margin: 40px 50px;
     }
 
     .ab-flex {
@@ -430,13 +436,13 @@ footer {
     }
 
 }
-    
+
 
 @media only screen and (max-width: 700px) {
     nav {
         line-height: 0px;
     }
-    
+
     label {
         display: block;
         cursor: pointer;
@@ -446,7 +452,7 @@ footer {
         text-align: center;
         width: 100%;
         display: none;
-        
+
     }
 
     .menu a {
@@ -488,7 +494,8 @@ footer {
         font-size: 70px;
     }
 
-    .def-layout-margin, .intro-layout-margin  {
+    .def-layout-margin,
+    .intro-layout-margin {
         margin: 40px 30px;
     }
 
@@ -497,7 +504,7 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    
+
     .column {
         width: 80%;
     }
@@ -512,10 +519,11 @@ footer {
         width: 80%;
         margin-right: 30px;
     }
+
     footer {
         background-image: none;
     }
-}  
+}
 
 @media only screen and (max-width: 550px) {
     .shop-now {
