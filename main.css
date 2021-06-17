@@ -66,6 +66,10 @@ nav {
     margin: 20px 30px 0 0;
 }
 
+div a {
+    color: var(--main-pink);
+}
+
 .menu a,
 .menu-collection a {
     clear: right;
@@ -76,6 +80,7 @@ nav {
     font-size: larger;
     font-weight: 700;
 }
+
 
 .menu-collection a {
     text-transform: uppercase;
@@ -254,6 +259,7 @@ p {
 
 /* Process section */
 
+
 .process-container {
     display: flex;
     justify-content: space-evenly;
@@ -261,8 +267,9 @@ p {
 }
 
 .process-container img {
-    height: 60vh;
+    height: 50vh;
     max-width: 100%;
+    margin: 10px;
 }
 
 /* Collection section */
@@ -281,10 +288,10 @@ p {
     margin: 10px;
 }
 
-.collections-container a:hover {
+/*.collections-container a:hover {
     opacity: 0.8;
 }
-
+*/
 .centered-text {
     text-align: center;
 }
@@ -294,6 +301,46 @@ p {
     font-size: 1.2em;
     padding-left: 0.7rem;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--main-pink);
+  }
+
+.product-img {
+    position: relative;
+}
+
+.product-img:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 1.6em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
 /* FAQ section */
 .faq-flex {
@@ -336,6 +383,10 @@ footer {
 .contact-flex {
     width: 40%;
     margin-right: 30px;
+}
+
+footer a {
+    color: var(--main-black);
 }
 
 /* ========================================================================== */
@@ -436,6 +487,10 @@ footer {
 
     img {
         object-fit: cover;
+    }
+
+    .menu a {
+       font-size: 0.8em;
     }
 
 }

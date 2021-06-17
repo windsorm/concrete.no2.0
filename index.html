@@ -11,7 +11,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
@@ -19,11 +21,13 @@
         <div class="nav-logo">
             <a href="index.html" rel="nofollow"><img id="logo-nav" src="assets/logo-v1.png" alt="logo"></a>
         </div>
-        <label for="toggle"><i class="uil uil-bars"></i></label>
+        <label for="toggle"><i class="fa fa-bars"></i></label>
         <input type="checkbox" id="toggle" />
         <div class="menu">
             <a href="#products">Products</a>
+            <a href="#about-brand">About</a>
             <a href="#process">Process</a>
+            <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -32,7 +36,7 @@
         <div class="intro-text-container">
             <h1>Concrete.no</h1>
             <p class="p-intro">Ethicaly handmade and designed homeware products.</p>
-            <a href="#products"><button class="shop-now">SHOP NOW</button></a>
+            <a href="https://www.etsy.com/shop/concreteno" target="_blank"><button class="shop-now">Go to Etsy</button></a>
         </div>
         <div class="intro-image">
             <img class="intro-pot" src="assets/pot-intro-new.png" alt="title-img">
@@ -58,6 +62,39 @@
         </div>
     </section>
 
+    <section id="about-brand" class="about-brand def-layout-margin">
+
+        <h2>About brand</h2>
+            <div class="ab-flex">
+                <div class="about-brand-txt">
+                    <p><strong>Concrete.no</strong> is a small young startup created in this difficult times based in
+                        Latvia.
+                        My name is Victoria, i decided to create this brand while i was on self-isolation.
+                        I am plant addicted person and for me it was always a problem to find a perfect pot
+                        for my plants, so i decided that easier is to create pots by myself!</p>
+                    <p>I noticed that people are also interested in products i am making, there were so
+                        exicted about idea that every product is unique by their shape, color and
+                        appearance, after a lot of requests from my friends and family i decided to share my
+                        knowledge and products with my lovely customers! </p>
+                    <p>This is how i started my exciting journey!
+                        I would be very happy to know You better! </p>
+                    <p><strong>My social media accounts:</strong> </p>
+                    <div class=some-links>
+                        <!--We should probably replace these svg icons with font-based icons for easier stlying. E.g. font-awesome icons.-->
+                        <a href="https://www.instagram.com/concrete.no/"><img class="some-icons ig-icon"
+                                src="assets/ig-svg.svg" alt="ig-icon"></a>
+                        <a href="coming-soon.html"><img class="some-icons some-spacing tiktok-icon"
+                                src="assets/tiktok-svg.svg" alt="tiktok-icon"></a>
+                        <a class="some-spacing" href="coming-soon.html"><img class="some-icons fb-icon"
+                                src="assets/fb-svg.svg" alt="fb-icon"></a>
+                    </div>
+                </div>
+
+                <div class="intro-image">
+                    <img class="intro-pot" src="assets/about-brand-new.png" alt="title-img">
+                </div>
+            </div>
+    </section>
 
     <section class="collections def-layout-margin" id="products">
         <h2>collections</h2>
@@ -68,22 +105,44 @@
         </div>
 
         <div class="collections-container">
-            <div class="col-1">
-                <img src="assets/gray-concrete.png" alt="">
+            <div class="product-card">
+                <div class="product-img">
+                    <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
+                        <div class="overlay">
+                            <div class="text">Go to Etsy</div>
+                        </div>
+                     <img class="image" src="assets/gray-concrete.png" alt="pink-terazzo">
+                    </a>
+                </div>
                 <h3>Gray Concrete</h3>
                 <p class="centered-text">Concrete pots & succulents
                     Gray</p>
                 <p class="centered-text">From<span class="price">5.00 €</span></p>
             </div>
-            <div class="col-2">
-                <a href="collection.html"><img src="assets/green-terazzo.png" alt="green-terazzo-collection"></a>
+            <div class="product-card">
+                <div class="product-img">
+                    <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
+                        <div class="overlay">
+                            <div class="text">Go to Etsy</div>
+                        </div>
+                     <img class="image" src="assets/green-terazzo.png" alt="pink-terazzo">
+                    </a>
+                </div>
                 <h3>Green Terazzo decor</h3>
                 <p class="centered-text">Jesmonite Pots & Plates
                     Green</p>
                 <p class="centered-text">From<span class="price">7.00 €</span></p>
             </div>
-            <div class="col-3">
-                <img src="assets/pink-terazzo.png" alt="">
+            <div class="product-card">
+                <div class="product-img">
+                    <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
+                        <div class="overlay">
+                            <div class="text">Go to Etsy</div>
+                        </div>
+                     <img class="image" src="assets/pink-terazzo.png" alt="pink-terazzo">
+                    </a>
+                </div>
+    
                 <h3>Pink Terazzo decor</h3>
                 <p class="centered-text">Jesmonite pots & Plates
                     Pink</p>
@@ -92,42 +151,22 @@
         </div>
     </section>
 
-    <section class="about-brand def-layout-margin">
+   
 
-        <h2>About brand</h2>
-        <div class="ab-flex">
-            <div class="about-brand-txt">
-                <p><strong>Concrete.no</strong> is a small young startup created in this difficult times based in
-                    Latvia.
-                    My name is Victoria, i decided to create this brand while i was on self-isolation.
-                    I am plant addicted person and for me it was always a problem to find a perfect pot
-                    for my plants, so i decided that easier is to create pots by myself!</p>
-                <p>I noticed that people are also interested in products i am making, there were so
-                    exicted about idea that every product is unique by their shape, color and
-                    appearance, after a lot of requests from my friends and family i decided to share my
-                    knowledge and products with my lovely customers! </p>
-                <p>This is how i started my exciting journey!
-                    I would be very happy to know You better! </p>
-                <p><strong>My social media accounts:</strong> </p>
-                <div class=some-links>
-                    <!--We should probably replace these svg icons with font-based icons for easier stlying. E.g. font-awesome icons.-->
-                    <a href="https://www.instagram.com/concrete.no/"><img class="some-icons ig-icon"
-                            src="assets/ig-svg.svg" alt="ig-icon"></a>
-                    <a href="coming-soon.html"><img class="some-icons some-spacing tiktok-icon"
-                            src="assets/tiktok-svg.svg" alt="tiktok-icon"></a>
-                    <a class="some-spacing" href="coming-soon.html"><img class="some-icons fb-icon"
-                            src="assets/fb-svg.svg" alt="fb-icon"></a>
-                </div>
-            </div>
-
-            <div class="intro-image">
-                <img class="intro-pot" src="assets/about-brand-img.png" alt="title-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="def-layout-margin" id="process">
+    <section class="def-layout-margin process" id="process">
         <h2>Process</h2>
+        <div class="basic-fw-p">
+            <p>Process of making pink tray for accesories from Jesmonite.</p>
+        </div>
+        <div class="process-container">
+            <div><img src="assets/process-img/process-1.png" alt="procces-step-1"></div>
+            <div><img src="assets/process-img/process-2.png" alt="procces-step-1"></div>
+            <div><img src="assets/process-img/process-3.png" alt="procces-step-1"></div>
+            <div><img src="assets/process-img/process-4.png" alt="procces-step-1"></div>
+            <div><img src="assets/process-img/process-5.png" alt="procces-step-1"></div>
+            <div><img src="assets/process-img/process-6.png" alt="procces-step-1"></div>
+        </div>
+   
         <div class="process-container">
             <!--Embed IG posts - Official Instagram API-->
             <div class="video-container">
@@ -226,6 +265,7 @@
             </div>
 
             <div class="video-container">
+                
                 <blockquote class="instagram-media"
                     data-instgrm-permalink="https://www.instagram.com/reel/CPggLm2h_Yw/?utm_source=ig_embed&amp;utm_campaign=loading"
                     data-instgrm-version="13"
@@ -318,30 +358,26 @@
                     </div>
                 </blockquote>
                 <script async src="//www.instagram.com/embed.js"></script>
+                
             </div>
         </div>
+
+        <div class="process-container">
+            <!--Embed TikTok posts - Official TikTok API-->
+            <div class="video-container">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@concreteno/video/6973600416961449221" data-video-id="6973600416961449221" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@concreteno" href="https://www.tiktok.com/@concreteno">@concreteno</a> <p><a title="ожиданиереальность" target="_blank" href="https://www.tiktok.com/tag/%D0%BE%D0%B6%D0%B8%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C">##ожиданиереальность</a> <a title="jesmonite" target="_blank" href="https://www.tiktok.com/tag/jesmonite">##jesmonite</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a> <a title="smallbusiness" target="_blank" href="https://www.tiktok.com/tag/smallbusiness">##smallbusiness</a></p> <a target="_blank" title="♬ original sound - 𝗨𝗴𝗵 𝗷𝘂𝘀𝘁 𝗺𝗲𝗻" href="https://www.tiktok.com/music/original-sound-6871605577735310086">♬ original sound - 𝗨𝗴𝗵 𝗷𝘂𝘀𝘁 𝗺𝗲𝗻</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+            </div>
+
+            <div class="video-container">
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@concreteno/video/6974406468539829509" data-video-id="6974406468539829509" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@concreteno" href="https://www.tiktok.com/@concreteno">@concreteno</a> <p>Все только начинается. <a title="рек" target="_blank" href="https://www.tiktok.com/tag/%D1%80%D0%B5%D0%BA">##рек</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a> <a title="smallbusiness" target="_blank" href="https://www.tiktok.com/tag/smallbusiness">##smallbusiness</a> <a title="jesmonite" target="_blank" href="https://www.tiktok.com/tag/jesmonite">##jesmonite</a> <a title="handmade" target="_blank" href="https://www.tiktok.com/tag/handmade">##handmade</a></p> <a target="_blank" title="♬ small business check follow zoeizdesigns on insta - zoee" href="https://www.tiktok.com/music/small-business-check-follow-zoeizdesigns-on-insta-6936673058086308614">♬ small business check follow zoeizdesigns on insta - zoee</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                
+            </div>
+        </div>    
+
     </section>
 
-    <section class="def-layout-margin" id="how-to-use">
-        <h2>How to use</h2>
-
-        <div class="collections-container">
-            <div class="col-1">
-                <img src="assets/htu-1.png" alt="">
-
-            </div>
-            <div class="col-2">
-                <img src="assets/htu-2.png" alt="">
-
-            </div>
-            <div class="col-3">
-                <img src="assets/htu-3.png" alt="">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="faq def-layout-margin">
+    <section id="faq" class="faq def-layout-margin">
         <h2>Any questions?</h2>
         <div class=faq-flex>
             <div class="q-container">
@@ -377,16 +413,16 @@
             <h2 class="footer-h2">Let's get in touch!</h2>
             <div class="contact-details">
                 <div class="contact-flex">
-                    <p><strong>Email:</strong> concrete@concrete.no</p>
-                    <p><strong>Phone:</strong> +45 67 39 20</p>
-                    <p><strong>Adress:</strong> Brivibas str. Riga, Latvia</p>
+                    <a href="mailto:concreto@concreteno.com"><p><strong>  Email:</strong> concrete@concrete.no</p></a>
+                    <a href="tel:+45673920"><p><strong>  Tel:</strong> +45 67 39 20</p></a>
+                    <a href="https://goo.gl/maps/U3HfEQC8Tnz1iaab6" target="_blank"><p><strong>Adress:</strong> Brivibas str. Riga, Latvia</p></a>
                 </div>
 
                 <div class="contact-flex">
                     <div class=some-links>
                         <a href="https://www.instagram.com/concrete.no/" target="_blank"><img class="some-icons"
                                 src="assets/ig-svg.svg" alt="ig-icon"></a>
-                        <a href="coming-soon.html" rel="nofollow"><img class="some-icons some-spacing"
+                        <a href="https://www.tiktok.com/@concreteno" target="_blank"><img class="some-icons some-spacing"
                                 src="assets/tiktok-svg.svg" alt="tiktok-icon"></a>
                         <a class="some-spacing" href="coming-soon.html" rel="nofollow"><img class="some-icons"
                                 src="assets/fb-svg.svg" alt="fb-icon"></a>
