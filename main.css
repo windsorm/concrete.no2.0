@@ -194,6 +194,27 @@ p {
     object-fit: cover;
 }
 
+.intro-btns-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#explore-link {
+    font-size: 1.3em;
+    color: var(--main-black);    
+}
+
+#explore-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.arrow-style {
+    color: var(--main-green);
+    padding: 5px;
+}
+
 .icon-section {
     display: flex;
     justify-content: space-evenly;
@@ -357,11 +378,10 @@ p {
 /* Footer section */
 footer {
     background-color: #F3F3F2;
-    /* Background image
-    background-image: url(assets/footer-bg-fixed.png);
+    /* Background image */
+    background-image: url(assets/pot-footer.png);
     background-repeat: no-repeat;
     background-position: right;
-    */
     color: var(--main-black);
     padding: 10px 0;
     margin-top: 30px;
@@ -417,11 +437,14 @@ footer a {
     color: var(--main-green);
     background-color: var(--white);
     border: 3px solid;
-    padding: 25px 50px;
+    padding: 20px 50px;
     font-size: 1.3em;
     font-weight: 600;
-    margin: 60px 0;
+    margin: 40px 0;
+    margin-right: 40px;
     cursor: pointer;
+    border-radius: 100px;
+    white-space: nowrap;
 }
 
 .main-btn {
@@ -448,6 +471,16 @@ footer a {
 /* ========================================================================== */
 /* MEDIA QUERIES */
 /* ========================================================================== */
+@media  only screen and (max-width: 1340px) {
+    .intro-btns-flex {
+        justify-content: center;
+   }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+}
 @media only screen and (max-width: 1100px) {
     .contact-flex {
         width: 90%;
@@ -506,13 +539,13 @@ footer a {
     
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 760px) {
     nav ul li a {
         font-size: 0.8em;
     }
 }
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 725px) {
     label #btn{
         display:block;
     }
@@ -609,19 +642,7 @@ footer a {
 }
 
 @media only screen and (max-width: 550px) {
-    .shop-now {
-        width: 70%;
-    }
-
-    .shop-now {
-        padding: 20px 10px;
-        font-size: 1em;
-    }
-
-    .contact-details {
-        flex-direction: column;
-    }
-
+  
     .collections-container img {
         margin: 0;
     }
