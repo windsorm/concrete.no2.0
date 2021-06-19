@@ -112,6 +112,9 @@ label #btn, label .cancel {
     margin: 40px 150px;
 }
 
+.cs-margin {
+    margin: 150px 150px;
+}
 
 /* Main headlines styles*/
 h1 {
@@ -409,6 +412,17 @@ footer a {
 .footnote {
     text-align: center;
     padding-top: 50px;
+}
+
+.go-back {
+    font-size: larger;
+    text-align: center;
+    color: var(--main-black);
+}
+
+#back-arrow {
+    color: var(--main-green);
+    font-weight: 900;
 }
 
 /* ========================================================================== */
