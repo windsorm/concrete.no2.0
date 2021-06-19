@@ -3,14 +3,14 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Home | Concrete.no</title>
+    <title>Mājaslapa | Concrete.no</title>
     <meta name="author"
         content="ZEALAND Multimedia Design group - Potato Pancakes | Alina Locmere, Ketija Eltermane, Simona Katiliute & Martin Windsor">
     <meta name="description" content="Conrete.no. Concrete decorative pots.">
     <meta name="robots" content="noindex">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='normalize.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -24,17 +24,17 @@
             <i class="fa fa-times cancel"></i>
         </label>
       
-        <a href="index.html"><img class="logo" src="assets/logo-v1.png" alt="logo-menu"></a>
+        <a href="index.html"><img class="logo" src="../assets/logo-v1.png" alt="logo-menu"></a>
         <ul>
             
-            <li><a class="check" class="cancel" href="#products">Produkti</a></li>
-            <li><a class="hover-anim" href="#about-brand">Par mani</a></li>
-            <li><a class="hover-anim" href="#process">Process</a></li>
-            <li><a class="hover-anim" href="#faq">FAQ</a></li>
-            <li><a class="hover-anim" href="#contact">Kontakt</a></li>
-            <li><a class="hover-anim" href="index.html"><img class="flag-icon" src="assets/uk-flag.png" alt="switch-dm"></a></li>
+            <li><a href="#products">Produkti</a></li>
+            <li><a href="#about-brand">Par mani</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="../index.html"><img class="flag-icon" src="../assets/uk-flag.png" alt="switch-dm"></a></li>
             <!--
-                <li><a class="hover-anim" href="darkmode/index.html"><img src="images/dm-button-l-svg.svg" alt="switch-dm" style="vertical-align:middle"></a></li>
+                <li><a class="" href="darkmode/index.html"><img src="images/dm-button-l-svg.svg" alt="switch-dm" style="vertical-align:middle"></a></li>
             -->
         </ul>
     </nav>
@@ -43,72 +43,74 @@
         <div class="intro-text-container">
             <h1>Concrete.no</h1>
             <p class="p-intro">Ētiski ar rokām darināti un izstrādāti mājsaimniecības izstrādājumi.</p>
-            <a href="https://www.etsy.com/shop/concreteno" target="_blank"><button class="shop-now">Let uz Etsy</button></a>
+                <div class="intro-btns-flex">
+                    <div><a href="https://www.etsy.com/shop/concreteno" target="_blank"><button class="shop-now">Etsy shop</button></a></div>
+                    <div><a id="explore-link" href="#about-brand">Izpētīt zīmolu  <span class="fa fa-angle-down arrow-style"></span></a></div>
+                </div>
         </div>
         <div class="intro-image">
-            <img class="intro-pot" src="assets/pot-intro-new.png" alt="title-img">
+            <img class="intro-pot" src="../assets/pot-intro-new.png" alt="title-img">
         </div>
     </section>
 
     <section class="def-layout-margin icon-section">
         <div class="icon-container">
-            <img src="assets/delivery.png" alt="delivery-icon">
-            <p class="centered-text">Worldwide delivery</p>
+            <img src="../assets/delivery.png" alt="delivery-icon">
+            <p class="centered-text">Piegāde visā pasaulē</p>
         </div>
         <div class="icon-container">
-            <img src="assets/local-biz.png" alt="local-business-icon">
-            <p class="centered-text">Local Business</p>
+            <img src="../assets/local-biz.png" alt="local-business-icon">
+            <p class="centered-text">Vietējie uzņēmumi</p>
         </div>
         <div class="icon-container">
-            <img src="assets/handmade.png" alt="delivery-icon">
-            <p class="centered-text">Made with love</p>
+            <img src="../assets/handmade.png" alt="delivery-icon">
+            <p class="centered-text">Izgatavots ar mīlestību</p>
         </div>
         <div class="icon-container">
-            <img src="assets/plant.png" alt="delivery-icon">
-            <p class="centered-text">Perfect for your plants</p>
+            <img src="../assets/plant.png" alt="delivery-icon">
+            <p class="centered-text">Lieliski piemērots jūsu augiem</p>
         </div>
     </section>
 
     <section id="about-brand" class="about-brand def-layout-margin">
 
-        <h2>About brand</h2>
+        <h2>Izpētīt zīmolu</h2>
             <div class="ab-flex">
                 <div class="about-brand-txt">
-                    <p><strong>Concrete.no</strong> is a small young startup created in this difficult times based in
-                        Latvia.
-                        My name is Victoria, i decided to create this brand while i was on self-isolation.
-                        I am plant addicted person and for me it was always a problem to find a perfect pot
-                        for my plants, so i decided that easier is to create pots by myself!</p>
-                    <p>I noticed that people are also interested in products i am making, there were so
-                        exicted about idea that every product is unique by their shape, color and
-                        appearance, after a lot of requests from my friends and family i decided to share my
-                        knowledge and products with my lovely customers! </p>
-                    <p>This is how i started my exciting journey!
-                        I would be very happy to know You better! </p>
-                    <p><strong>My social media accounts:</strong> </p>
+                    <p><strong>Concrete.no</strong> ir neliels jauns jaunuzņēmums, kas izveidots šajos grūtajos laikos un atrodas
+                        Latvijā.
+                        Mani sauc Viktorija, es nolēmu izveidot šo zīmolu, kad biju pašizolācijā.
+                        Esmu no augiem atkarīga persona, un man vienmēr bija problēma atrast perfektu podu.
+                        saviem augiem, tāpēc nolēmu, ka vieglāk ir pašai radīt podus!</p>
+                    <p>Es pamanīju, ka cilvēki interesējas arī par produktiem, ko es gatavoju, bija tik daudz.
+                        sajūsmināti par ideju, ka katrs izstrādājums ir unikāls ar savu formu, krāsu un krāsu.
+                        pēc daudzu draugu un ģimenes locekļu lūgumiem es nolēmu dalīties ar saviem
+                        dalīties savās zināšanās un produktos ar saviem mīļajiem klientiem! </p>
+                    <p>Tā es sāku savu aizraujošo ceļojumu!
+                        Es būtu ļoti priecīgs iepazīt Jūs labāk! </p>
+                    <p><strong>Mani sociālo mediju konti::</strong> </p>
                     <div class=some-links>
                         <!--We should probably replace these svg icons with font-based icons for easier stlying. E.g. font-awesome icons.-->
                         <a href="https://www.instagram.com/concrete.no/"><img class="some-icons ig-icon"
-                                src="assets/ig-svg.svg" alt="ig-icon"></a>
+                                src="../assets/ig-svg.svg" alt="ig-icon"></a>
                         <a href="coming-soon.html"><img class="some-icons some-spacing tiktok-icon"
-                                src="assets/tiktok-svg.svg" alt="tiktok-icon"></a>
+                                src="../assets/tiktok-svg.svg" alt="tiktok-icon"></a>
                         <a class="some-spacing" href="coming-soon.html"><img class="some-icons fb-icon"
-                                src="assets/fb-svg.svg" alt="fb-icon"></a>
+                                src="../assets/fb-svg.svg" alt="fb-icon"></a>
                     </div>
                 </div>
 
                 <div class="intro-image">
-                    <img class="intro-pot" src="assets/about-brand-new.png" alt="title-img">
+                    <img class="intro-pot" src="../assets/about-brand-new.png" alt="title-img">
                 </div>
             </div>
     </section>
 
     <section class="collections def-layout-margin" id="products">
-        <h2>collections</h2>
+        <h2>kolekcijas</h2>
         <div class="basic-fw-p">
-            <p>Latest new in collections!</p>
-            <p>Please, note that every product colour design is unique and it is impossible to repeat same pattern 2
-                times!</p>
+            <p>Pēdējie jaunumi kolekcijās!</p>
+            <p>Lūdzu, ņemiet vērā, ka katra izstrādājuma krāsu dizains ir unikāls un nav iespējams atkārtot vienu un to pašu rakstu.</p>
         </div>
 
         <div class="collections-container">
@@ -116,44 +118,44 @@
                 <div class="product-img">
                     <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
                         <div class="overlay">
-                            <div class="text">Go to Etsy</div>
+                            <div class="text">Apmeklējiet Etsy</div>
                         </div>
-                     <img class="image" src="assets/gray-concrete.png" alt="pink-terazzo">
+                     <img class="image" src="../assets/gray-concrete.png" alt="pink-terazzo">
                     </a>
                 </div>
-                <h3>Gray Concrete</h3>
-                <p class="centered-text">Concrete pots & succulents
-                    Gray</p>
-                <p class="centered-text">From<span class="price">5.00 €</span></p>
+                <h3>Pelēkais betons</h3>
+                <p class="centered-text">Betona podi un sukulenti
+                    Pelēks</p>
+                <p class="centered-text">No<span class="price">5.00 €</span></p>
             </div>
             <div class="product-card">
                 <div class="product-img">
                     <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
                         <div class="overlay">
-                            <div class="text">Go to Etsy</div>
+                            <div class="text">Apmeklējiet Etsy</div>
                         </div>
-                     <img class="image" src="assets/green-terazzo.png" alt="pink-terazzo">
+                     <img class="image" src="../assets/green-terazzo.png" alt="pink-terazzo">
                     </a>
                 </div>
                 <h3>Green Terazzo decor</h3>
-                <p class="centered-text">Jesmonite Pots & Plates
-                    Green</p>
-                <p class="centered-text">From<span class="price">7.00 €</span></p>
+                <p class="centered-text">Jesmonīta podi un šķīvji
+                    Zaļš</p>
+                <p class="centered-text">No<span class="price">7.00 €</span></p>
             </div>
             <div class="product-card">
                 <div class="product-img">
                     <a href="https://www.etsy.com/shop/concreteno" target="_blank">  
                         <div class="overlay">
-                            <div class="text">Go to Etsy</div>
+                            <div class="text">Apmeklējiet Etsy</div>
                         </div>
-                     <img class="image" src="assets/pink-terazzo.png" alt="pink-terazzo">
+                     <img class="image" src="../assets/pink-terazzo.png" alt="pink-terazzo">
                     </a>
                 </div>
     
                 <h3>Pink Terazzo decor</h3>
-                <p class="centered-text">Jesmonite pots & Plates
-                    Pink</p>
-                <p class="centered-text">From<span class="price">7.00 €</span></p>
+                <p class="centered-text">Jesmonīta podi un šķīvji
+                    Rozā</p>
+                <p class="centered-text">No<span class="price">7.00 €</span></p>
             </div>
         </div>
     </section>
@@ -163,15 +165,15 @@
     <section class="def-layout-margin process" id="process">
         <h2>Process</h2>
         <div class="basic-fw-p">
-            <p>Process of making pink tray for accesories from Jesmonite.</p>
+            <p>Rozā paplātes aksesuāru izgatavošanas process no jesmonīta.</p>
         </div>
         <div class="process-container">
-            <div><img src="assets/process-img/process-1.png" alt="procces-step-1"></div>
-            <div><img src="assets/process-img/process-2.png" alt="procces-step-1"></div>
-            <div><img src="assets/process-img/process-3.png" alt="procces-step-1"></div>
-            <div><img src="assets/process-img/process-4.png" alt="procces-step-1"></div>
-            <div><img src="assets/process-img/process-5.png" alt="procces-step-1"></div>
-            <div><img src="assets/process-img/process-6.png" alt="procces-step-1"></div>
+            <div><img src="../assets/process-img/process-1.png" alt="procces-step-1"></div>
+            <div><img src="../assets/process-img/process-2.png" alt="procces-step-2"></div>
+            <div><img src="../assets/process-img/process-3.png" alt="procces-step-3"></div>
+            <div><img src="../assets/process-img/process-4.png" alt="procces-step-4"></div>
+            <div><img src="../assets/process-img/process-5.png" alt="procces-step-5"></div>
+            <div><img src="../assets/process-img/process-6.png" alt="procces-step-6"></div>
         </div>
    
         <div class="process-container">
@@ -385,59 +387,58 @@
     </section>
 
     <section id="faq" class="faq def-layout-margin">
-        <h2>Any questions?</h2>
+        <h2>Kādi jautājumi?</h2>
         <div class=faq-flex>
             <div class="q-container">
-                <h3 class="q-headline">What is your return policy?</h3>
-                <p>I accept returns. In order to return, you have to contact me first.</p>
-                <p>While returning the item, the buyer is responsible for return shipping costs. If the item is returned
-                    damaged ater the delivery, the buyer is responsible for any loss in value.</p>
+                <h3 class="q-headline">Kāda ir jūsu atgriešanas politika?</h3>
+                <p>Es pieņemu atgriešanu. Lai atgrieztu preces, vispirms ir jāsazinās ar mani.</p>
+                <p>Atgriežot preci atpakaļ, pircējs ir atbildīgs par atgriešanas nosūtīšanas izmaksām. Ja prece tiek atgriezta
+                    bojāta pēc piegādes, pircējs ir atbildīgs par vērtības zudumu.</p>
             </div>
             <div class="q-container">
-                <h3 class="q-headline">Can I order online?</h3>
-                <p>Yes! You can make an order via DM on my <a
-                        href="https://www.instagram.com/concrete.no/">Instagram</a>
-                    or
-                    order by writing a message through email:
+                <h3 class="q-headline">Vai es varu pasūtīt tiešsaistē?</h3>
+                <p>Jā! Jūs varat veikt pasūtījumu, izmantojot DM uz manu <a
+                        href="https://www.instagram.com/concrete.no/">Instagram</a>, vai <a href="https://www.etsy.com/shop/concreteno">Etsy</a>
+                        vai
+                        pasūtījumu, rakstot ziņu pa e-mail:
                     concrete.no@gmail.com</p>
             </div>
             <div class="q-container">
-                <h3 class="q-headline">Is it eco friendly?</h3>
-                <p>The products are made from long-lasting materials (concrete, jesmonite), which makes them reusable as
-                    well. The products are all produced in an ethical way.</p>
+                <h3 class="q-headline">Vai tas ir videi draudzīgs?</h3>
+                <p>Izstrādājumi ir izgatavoti no ilgmūžīgiem materiāliem (betons, ješmonīts), kas ļauj tos izmantot atkārtoti, jo
+                    arī atkārtoti lietojami. Visi izstrādājumi ir ražoti ētiski.</p>
             </div>
             <div class="q-container">
-                <h3 class="q-headline">Can I order products with custom design?</h3>
-                <p>Yes! While ordering the products you can always have a custom order, but keep in mind that two
-                    similar designs are not possible, as all of the products are unique. In any way, I am always happy
-                    to combine your ideas with my passion.</p>
+                <h3 class="q-headline">Vai es varu pasūtīt produktus ar pielāgotu dizainu?</h3>
+                <p>Jā! Pasūtot produktus, jūs vienmēr varat veikt pasūtījumu pēc pasūtījuma, bet paturiet prātā, ka divi
+                    līdzīgi dizaini nav iespējami, jo visi produkti ir unikāli. Jebkurā gadījumā es vienmēr priecājos
+                    apvienot jūsu idejas ar savu aizraušanos.</p>
             </div>
         </div>
     </section>
 
     <footer id="contact">
         <div class="def-layout-margin">
-            <h2 class="footer-h2">Let's get in touch!</h2>
+            <h2 class="footer-h2">Sazinieties!</h2>
             <div class="contact-details">
                 <div class="contact-flex">
                     <a href="mailto:concreto@concreteno.com"><p><strong>  Email:</strong> concrete@concrete.no</p></a>
                     <a href="tel:+45673920"><p><strong>  Tel:</strong> +45 67 39 20</p></a>
-                    <a href="https://goo.gl/maps/U3HfEQC8Tnz1iaab6" target="_blank"><p><strong>Adress:</strong> Brivibas str. Riga, Latvia</p></a>
+                    <a href="https://goo.gl/maps/U3HfEQC8Tnz1iaab6" target="_blank"><p><strong>Adrese:</strong> Brivibas str. Riga, Latvia</p></a>
                 </div>
 
                 <div class="contact-flex">
                     <div class=some-links>
                         <a href="https://www.instagram.com/concrete.no/" target="_blank"><img class="some-icons"
-                                src="assets/ig-svg.svg" alt="ig-icon"></a>
+                                src="../assets/ig-svg.svg" alt="ig-icon"></a>
                         <a href="https://www.tiktok.com/@concreteno" target="_blank"><img class="some-icons some-spacing"
-                                src="assets/tiktok-svg.svg" alt="tiktok-icon"></a>
+                                src="../assets/tiktok-svg.svg" alt="tiktok-icon"></a>
                         <a class="some-spacing" href="coming-soon.html" rel="nofollow"><img class="some-icons"
-                                src="assets/fb-svg.svg" alt="fb-icon"></a>
+                                src="../assets/fb-svg.svg" alt="fb-icon"></a>
                     </div>
                 </div>
-                <a href="coming-soon.html" rel="nofollow"><button class="main-btn">SUBSRIBE</button></a>
             </div>
-            <p style="text-align: center;">Made with 🥔 by Potato Pancake | © 2021</p>
+            <p class="footnote">Made with 🥔 by Potato Pancake | © 2021</p>
         </div>
     </footer>
 
