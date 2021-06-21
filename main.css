@@ -64,7 +64,6 @@ nav ul {
 }
 
 
-/*delete .logo after inserting logo*/
 nav ul li {
     display: inline-block;
     line-height: 90px;
@@ -555,7 +554,7 @@ footer a {
     }
     
     .logo {
-        height: 8vh;
+        height: 7vh;
         margin-left: 30px;
         margin-top: 15px;
     }
@@ -673,13 +672,17 @@ footer a {
     .cs-margin {
         margin: 100px 30px;
     }
-    /*
+    
+    /* For mobile future mobile background.
     .intro-container {
+        
         background-image: url(assets/mobile-bg.png);
         background-repeat: no-repeat;
-        background-size: 150vh;
+        background-size: 130vh;
         width: 100%;
         padding-bottom: 20px;
+        
     }
     */
+    
 }
