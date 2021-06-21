@@ -551,6 +551,11 @@ footer a {
         font-size: 0.9em;
     }
     
+    .logo {
+        height: 8vh;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -660,4 +665,18 @@ footer a {
     .collections-container img {
         margin: 0;
     }
+
+
+    .cs-margin {
+        margin: 100px 30px;
+    }
+    /*
+    .intro-container {
+        background-image: url(assets/mobile-bg.png);
+        background-repeat: no-repeat;
+        background-size: 150vh;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    */
 }
