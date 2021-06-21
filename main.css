@@ -191,7 +191,8 @@ p {
 
 }
 
-.intro-image img {
+
+.intro-image img, .ab-image img {
     height: 70vh;
     max-width: 100%;
     object-fit: cover;
@@ -255,6 +256,8 @@ p {
 /* About brand section */
 .about-brand-txt {
     flex: 2;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .about-brand-img {
@@ -263,9 +266,9 @@ p {
 
 .ab-flex {
     display: flex;
-
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 
 .some-icons {
     height: 5vh;
